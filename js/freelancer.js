@@ -47,3 +47,25 @@
   });
 
 })(jQuery); // End of use strict
+
+
+$(window).scroll(function() {
+
+      var top_of_element = $(".progress").offset().top;
+      var bottom_of_element = $(".progress").offset().top + $(".progress").outerHeight;
+      var bottom_of_screen = $(window).scrollTop() + $(window).height();
+
+  if (isElementInViewport($("#java"))) {
+          var max = $("#java").val();
+          $("#java").val(0).animate({ value: max}, { duration: 2000, easing: 'easeOutCirc' });
+      }
+});
+
+// $('progress').each(function() {
+//     var max = $(this).val();
+//     $(this).val(0).animate({ value: max }, { duration: 2000, easing: 'easeOutCirc' });
+//       });
+
+
+
+
