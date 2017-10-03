@@ -29,7 +29,12 @@ h5,
 h6 {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
+
+h2 {
+  line-height: 150px; 
+}
 
 .row.extra-bottom-padding{
    margin-bottom: 20px;
@@ -84,13 +89,22 @@ section.success {
 
   section.history {
   color: #2C3E50;
-  background: #ededed; }
+  background: white; 
+  margin-top: 5px}
 
 @media (max-width: 767px) {
   section {
     padding: 75px 0; }
   section.first {
     padding-top: 75px; } }
+
+
+
+/*-----------------------Education -----------------------*/
+
+#education {
+  background-color: #ededed
+}
 
 .scroll-top {
   position: fixed;
@@ -171,12 +185,13 @@ section.success {
 
 
   header.masthead {
-  padding-top: 100px;
+  padding-top: 10px;
   padding-bottom: 50px;
   text-align: center;
   color: white;
-  background-color: #7ec0ee; 
-   background-size: cover;
+/*  background-color: #7ec0ee; */
+  background-image: url("../img/berkeleyBlur.jpg");
+  background-size: cover
   }
 
 
@@ -240,6 +255,10 @@ section.success {
 
 #portfolio * {
   z-index: 2; }
+
+#portfolio {
+  background-color:  #ededed
+}
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -466,18 +485,24 @@ footer {
 .btn:focus {
   outline: none; }
 
-
+/*-----------------------Skills*/
 #skills span {
-    top: -70px;
-    left: 1%;
+    top: -55px;
+    left: 0%;
     position: relative;
-    font-size: 1.4em;
+    font-size: 1.0em;
     color: #2C3E50;
 }
 
 
+
+.skills text-header{
+   margin: 5px 0;
+}
+
+
 progress {
-    background-color: #f3f3f3;
+    background-color: #7ec0ee;
     border: 0;
     height: 1.5em;
     width: 100%;
@@ -488,12 +513,10 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: #329ad1;
+    background-color: #7ec0ee;
 }
 
 progress::-moz-progress-bar {
-    background-color: #329ad1;
+    background-color: #7ec0ee;
 
 }
-
-

@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Jon Miguel's Website</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,14 +41,17 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
           	<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-            </li>        
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
             </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+            </li>        
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
@@ -63,35 +66,63 @@
       <div class="background-image"></div>
       <div class="container">
         <img class="img-fluid" src="img/circleJM.png" alt="" style="width: 20.66%;">
-        <div class="intro-text">
-          <span class="name">Start</span>
-          <span class="skills">Software Engineer - Marketing Analyst - Soccer Player</span>
-          <span class="skills">Software Engineer - Marketing Analyst - Soccer Player</span>
-          <span class="skills">Software Engineer - Marketing Analyst - Soccer Player</span>
-          <span class="skills">Software Engineer - Marketing Analyst - Soccer Player</span>
-                  <div class="row row-m-t"></div>
+        <div class="intro-text"><p>Hello. My name is Jon Miguel Jara. I am an expereienced marketing analyst and an aspriring software engineer and this is my personal webiste! Please feel free to use  the form if you want to connect with me.</p>
         </div>
       </div>
 
     </header>
 
+
    <!-- Skills Section -->
 
-    <h2 class="text-center">Skills</h2>
+     
+
 	<section id="skills">
-		<progress value="80" max="100"></progress><span>JavaScript/jQuery</span>
-		<progress value="70" max="100"></progress><span>HTML5/CSS3</span>
-		<progress value="60" max="100"></progress><span>NodeJS</span>
-		<progress id="java" value="70" max="100"></progress><span>Java/PHP</span>
-		<progress value="60" max="100"></progress><span>MySQL</span>
-		<progress value="80" max="100"></progress><span>Photoshop</span>
+		<h2 class="text-center">Skills</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9">
+					<progress id = "java" value="90" max="100" val = "90"></progress><span>Java</span>
+					<progress id = "python" value="90" max="100"></progress><span>Python</span>
+					<progress id = "R" value="90" max="100"></progress><span>R</span>
+					<progress id = "cplusplus" value="80" max="100"></progress><span>C++</span>
+					<progress id = "sql" value="70" max="100"></progress><span>SQL</span>
+					<progress id = "swift" value="60" max="100"></progress><span>Swift</span>
+					<progress id = "HTML" value="55" max="100"></progress><span>HTML</span>
+					<progress id = "jquery" value="55" max="100"></progress><span>JQuery</span>
+					<progress id = "javascript" value="50" max="100"></progress><span>JavaScript</span>
+					<progress id = "css" value="50" max="100"></progress><span>CSS</span>
+				</div>
+				<div class="col-sm-3">
+					<h4 class="tools header">Tools</h4>
+					<ul class="tools-column">
+									<li id="gitHub" class="tool">GitHub</li>
+									<li id="xcode" class="tool">Xcode</li>
+									<li id="intelliJ" class="tool">IntelliJ</li>
+									<li id="visualStudio" class="tool">Visual Studio</li>
+									<li id="eclipse" class="tool">Sublime</li>
+									<li id="eclipse" class="tool">Rstudio</li>
+								</ul>
+					<h4 class="tools header">Other Skils</h4>
+					<ul class="tools-column">
+									<li id="gitHub" class="tool">Microsoft Excel</li>
+									<li id="xcode" class="tool">Microsoft Powerpoint</li>
+									<li id="statistics" class="tool">Statistics</li>
+									<li id="data" class="tool">Data Analysis</li>
+									<li id="intelliJ" class="tool">Marketing</li>
+									<li id="visualStudio" class="tool">SAP Business Objects</li>
+									<li id="eclipse" class="tool">Salesforce</li>
+								</ul>
+				</div>
+			</div>
+		</div>
 	</section>
+
   
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
       <div class="container">
         <h2 class="text-center">Portfolio</h2>
-        <hr class="star-primary">
         <div class="row">
           <div class="col-sm-4 portfolio-item">
             <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
@@ -135,16 +166,15 @@
 
       <div class="container">
         <h2 class="text-center">Experience</h2>
-        <div class="row row-m-t"></div>
 
         <div class="nine columns main-col">
             <div class="row extra-bottom-padding">
 
-            	<div class="col-lg-2">
-            		<img class="img-fluid" src="img/SFDC2.png" alt="">
+            	<div class="col-sm-2 foo">
+            		<img class="img-fluid sr-icons" src="img/SFDC2.png" alt="">
             	</div>
 
-               <div class="col-lg-10">
+               <div class="col-sm-10">
 
                   <h3>Salesforce</h3>
                   <p class="info">Master in Graphic Design <span>&bull;</span> <em class="date">April 2007</em></p>
@@ -161,11 +191,11 @@
 
             <div class="row extra-bottom-padding"">
 
-               <div class="col-lg-2">
-               	<img class="img-fluid" height = 250px src="img/chuck.png" alt="">
+               <div class="col-sm-2">
+               	<img class="img-fluid sr-icons" height = 250px src="img/chuck.png" alt="">
             	</div>
 
-               <div class="col-lg-10">
+               <div class="col-sm-10">
 
                   <h3>Charles Schwab</h3>
                   <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003 - March 2018</em></p>
@@ -185,11 +215,11 @@
 
           <div class="row">
 
-               <div class="col-lg-2">
-               	<img class="img-fluid" height = 250px src="img/berkeley.png" alt="">
+               <div class="col-sm-2">
+               	<img class="img-fluid sr-icons" height = 250px src="img/berkeley.png" alt="">
             	</div>
 
-               <div class="col-lg-10">
+               <div class="col-sm-10">
 
                   <h3>Charles Schwab</h3>
                   <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003 - March 2018</em></p>
@@ -210,11 +240,66 @@
       </div>
     </section>
 
+    <!-- Education Section -->
+    <section class="history" id="education">
+
+      <div class="container">
+        <h2 class="text-center">Education</h2>
+
+        <div class="nine columns main-col">
+            <div class="row extra-bottom-padding">
+
+            	<div class="col-sm-2 foo">
+            		<img class="img-fluid sr-edu" src="img/berkeleySeal.png" alt="">
+            	</div>
+
+               <div class="col-sm-10">
+
+                  <h3>UC Berkeley</h3>
+                  <p class="info">Statistics BA <span>&bull;</span> <em class="date">August 2011 - December 2015</em></p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
+                  </p>
+
+               </div>
+            </div> <!-- item end -->
+
+            <div class="row extra-bottom-padding"">
+
+               <div class="col-sm-2">
+               	<img class="img-fluid sr-edu" height = 250px src="img/osuSeal.png" alt="">
+            	</div>
+
+               <div class="col-sm-10">
+
+                  <h3>Oregon State University</h3>
+                  <p class="info">BS Computer Science<span>&bull;</span> <em class="date">Jan 2016 - present</em></p>
+
+                  <p>
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+        </div> <!-- main-col end -->   
+  
+
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">
         <h2 class="text-center">Contact Me</h2>
-        <hr class="star-primary">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -339,8 +424,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2>Project Title</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+                  <img class="img-fluid img-centered" src="img/portfolio/editor3.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                   <ul class="list-inline item-details">
@@ -383,8 +467,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2>Project Title</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/cake.png" alt="">
+                  <img class="img-fluid img-centered" src="img/portfolio/icecream.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                   <ul class="list-inline item-details">
@@ -427,8 +510,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2>Project Title</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/circus.png" alt="">
+                  <img class="img-fluid img-centered" src="img/portfolio/planets.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                   <ul class="list-inline item-details">
@@ -516,7 +598,7 @@
                 <div class="modal-body">
                   <h2>Project Title</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/safe.png" alt="">
+                  <img class="img-fluid img-centered" src="img/portfolio/icecream.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                   <ul class="list-inline item-details">
@@ -560,7 +642,7 @@
                 <div class="modal-body">
                   <h2>Project Title</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/submarine.png" alt="">
+                  <img class="img-fluid img-centered" src="img/portfolio/planets.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                   <ul class="list-inline item-details">
@@ -593,8 +675,10 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+<!--     <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -602,10 +686,10 @@
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-
+    scrollreveal.js
     <!-- Custom scripts for this template -->
+    <script src="js/scrollreveal.js"></script>
     <script src="js/freelancer.js"></script>
-
   </body>
 
 </html>
