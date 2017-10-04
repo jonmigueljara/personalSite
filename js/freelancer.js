@@ -68,15 +68,16 @@ Utils.prototype = {
             return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
         }
     }
+
 };
 
 var Utils = new Utils();
 
 
-function animateBar(elem)
+function animateBar(elem, max)
 {
     console.log (elem.val())
-    var max = elem.val();
+    // var max = elem.val();
     elem.val(0).animate({ value: max}, { duration: 2000, easing: 'easeOutCirc' });
 
 }
@@ -106,52 +107,52 @@ $(window).scroll(function() {
 
   if (Utils.isElementInView($('progress#java'), false) && !hasAnimatedJava) {
     hasAnimatedJava = true;
-    animateBar($('progress#java'))
+    animateBar($('progress#java'), 90)
   }
 
   if (Utils.isElementInView($('progress#python'), false) && !hasAnimatedPython) {
     hasAnimatedPython = true;
-    animateBar($('progress#python'))
+    animateBar($('progress#python'), 90)
   }
 
   if (Utils.isElementInView($('progress#R'), false) && !hasAnimatedR) {
     hasAnimatedR = true;
-    animateBar($('progress#R'))
+    animateBar($('progress#R'), 90)
   }
 
   if (Utils.isElementInView($('progress#cplusplus'), false) && !hasAnimatedcplusplus) {
     hasAnimatedcplusplus = true;
-    animateBar($('progress#cplusplus'))
+    animateBar($('progress#cplusplus'), 80)
   }
 
   if (Utils.isElementInView($('progress#sql'), false) && !hasAnimatedSQL) {
     hasAnimatedSQL = true;
-    animateBar($('progress#sql'))
+    animateBar($('progress#sql'), 70)
   }
 
   if (Utils.isElementInView($('progress#swift'), false) && !hasAnimatedSwift) {
     hasAnimatedSwift = true;
-    animateBar($('progress#swift'))
+    animateBar($('progress#swift'), 60)
   }
 
   if (Utils.isElementInView($('progress#jquery'), false) && !hasAnimatedJquery) {
     hasAnimatedJquery = true;
-    animateBar($('progress#jquery'))
+    animateBar($('progress#jquery'), 55)
   }
 
  if (Utils.isElementInView($('progress#HTML'), false) && !hasAnimatedHTML) {
     hasAnimatedHTML = true;
-    animateBar($('progress#HTML'))
+    animateBar($('progress#HTML'), 55)
   }
 
   if (Utils.isElementInView($('progress#javascript'), false) && !hasAnimatedJavaScript) {
     hasAnimatedJavaScript = true;
-    animateBar($('progress#javascript'))
+    animateBar($('progress#javascript'), 50)
   }
 
   if (Utils.isElementInView($('progress#css'), false) && !hasAnimatedCSS) {
     hasAnimatedCSS = true;
-    animateBar($('progress#css'))
+    animateBar($('progress#css'), 50)
   }
 
 

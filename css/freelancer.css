@@ -520,13 +520,3 @@ progress::-moz-progress-bar {
     background-color: #7ec0ee;
 
 }
-
-
-html.ios {
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: auto !important;
-}
-html.ios,
-html.ios body {
-    height: initial !important;
-}
